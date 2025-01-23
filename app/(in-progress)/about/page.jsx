@@ -1,12 +1,15 @@
-
-
 'use client';
+
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Navbar, Thumbnail, Contact } from '@/layout';
-import { Atransition } from '@/app/_layout/atransition';
-import { ParallaxReveal } from '@/components';
 
+import { Navbar } from '@/layout'; // Order imports as specified in your linting rules
+import { Thumbnail, Contact } from '@/layout'; // Order imports as specified in your linting rules 
+
+import { Atransition } from '@/app/_layout/atransition'; 
+import { ParallaxReveal } from '@/components'; 
+
+// ... rest of your component code
 const Work = () => {
   const technologies = [
     { name: 'Framer Motion', description: 'For smooth animations', logo: '/framer.png' },

@@ -1,13 +1,16 @@
 'use client';
+
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import Balancer from 'react-wrap-balancer';
-import { WTransition } from '@/layout';
-import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
-import { Navbar } from '@/layout';
-import { Header, Description, Thumbnail, Contact } from '@/layout';
 
+import { Navbar } from '@/layout';
+import { Header, Description, Thumbnail, Contact, WTransition } from '@/layout'; 
+
+import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components'; 
+
+// ... rest of your component code
 // ProjectSlider Component
 const ProjectSlider = ({ type, source }) => {
   return (

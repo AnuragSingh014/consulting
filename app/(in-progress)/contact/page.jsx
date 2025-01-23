@@ -1,110 +1,17 @@
-// 'use client';
-// import React, { useRef } from 'react';
-// import { motion } from 'framer-motion';
-// import Link from 'next/link';
-// import Balancer from 'react-wrap-balancer';
-// // import { CTransition } from '@/layout';
-// import { Ctransition } from '@/app/_layout/ctransition';
-// import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
-// import { Navbar } from '@/layout';
-// import { Header, Description, Thumbnail, Contact } from '@/layout';
-
-// // ProjectSlider Component
-// const ProjectSlider = ({ type, source }) => {
-//   return (
-//     <div className="relative overflow-hidden rounded-lg">
-//       <img 
-//         src={source} 
-//         alt={type} 
-//         className="w-64 h-64 object-cover"
-//       />
-//     </div>
-//   );
-// };
-
-// // Main Combined Component
-// const Work= () => {
-//   const containerRef = useRef(null);
-//   const phrase = "Creating next level digital products";
-
-//   // Mock project options (replace with your actual data)
-//   const projectOptions = {
-//     first: [
-//       { type: 'web', source: '/screenshot.png' },
-//       { type: 'mobile', source: '/screenshot.png' },
-//       { type: 'design', source: '/screenshot.png' }
-//     ],
-//     second: [
-//       { type: 'app', source: '/screenshot.png' },
-//       { type: 'branding', source: '/screenshot.png' },
-//       { type: 'ui', source: '/screenshot.png' }
-//     ]
-//   };
-
-//   const firstSlider = projectOptions.first.map((item, index) => (
-//     <ProjectSlider key={`first-${index}`} {...item} />
-//   ));
-
-//   const secondSlider = projectOptions.second.map((item, index) => (
-//     <ProjectSlider key={`second-${index}`} {...item} />
-//   ));
-
-//   return (
-//     <Ctransition>
-//       <Navbar className='bg-[#1c1d20] text-white'/>
-//       {/* <Header /> */}
-//       <main className='bg-[#1c1d20] text-white'>
-//         {/* <Description /> */}
-//         <Thumbnail />
-   
-//         {/* <AboutSection /> */}
-
-//       <div className="min-h-screen">
-//         {/* Work Section */}
-//         <article className="container relative py-16">
-//           <div className="flex flex-col lg:flex-row gap-8 items-start">
-//             <div className="basis-full lg:basis-9/12">
-//               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight">
-//                 <ParallaxReveal paragraph={"contact us to work with us"} />
-//               </h1>
-//             </div>
-//           </div>
-//         </article>
-
-//         {/* Project Section */}
-//         <section ref={containerRef} className="relative z-10 mt-14">
-//           <div className="grid items-center">
-//             <div className="">
-              
-              
-              
-//             </div>
-
-//             <motion.div
-//               className="w-screen "
-//               initial={{ height: 0 }}
-//               animate={{ height: 100 }}
-//               style={{ borderRadius: '0 0 50% 50%' }}
-//             />
-//           </div>
-//         </section>
-//       </div>
-//       </main>
-//       <Contact />
-//     </Ctransition>
-//   );
-// };
-
-// export default Work;
 
 
 'use client';
+
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
-import { Ctransition } from '@/app/_layout/ctransition';
-import { MagneticButton, ParallaxReveal } from '@/components';
+
 import { Navbar } from '@/layout';
-import { Thumbnail, Contact } from '@/layout';
+import { Thumbnail, Contact } from '@/layout'; 
+
+import { Ctransition } from '@/app/_layout/ctransition'; 
+import { MagneticButton, ParallaxReveal } from '@/components'; 
+
+// ... rest of your component code
 
 const Work = () => {
   const containerRef = useRef(null);
