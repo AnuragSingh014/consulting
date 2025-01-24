@@ -4,7 +4,8 @@ import { Copyright } from 'lucide-react';
 
 export function NavbarBrand() {
   return (
-    <div className='group flex cursor-pointer pb-5'>
+    <div className='flex items-center justify-center'>
+    <div className='group flex cursor-pointer justify-center items-center'>
       <div className='transition-transform duration-500 ease-in-expo group-hover:rotate-[360deg]'>
         <Copyright />
       </div>
@@ -20,6 +21,7 @@ export function NavbarBrand() {
           abc
         </h5>
       </div>
+    </div>
     </div>
   );
 }

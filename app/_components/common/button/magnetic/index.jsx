@@ -39,7 +39,7 @@ export function MagneticButton({
       }}
       onPointerMove={handleMagneticMove}
       onPointerOut={handleMagneticOut}
-      whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1 }}
       {...props}
     >
       <MagneticItem>{children}</MagneticItem>

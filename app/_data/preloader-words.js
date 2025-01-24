@@ -1,11 +1,11 @@
 export const preloaderWords = [
   'Hello',
-  'Bonjour',
-  'Ciao',
+  'हेलो',
+  'হ্যাল া',
   'Olà',
-  'سلام',
+  'ହେହ ୋ',
   'やあ',
-  'Hallå',
-  'Guten tag',
-  'Hallo',
+  'హలో',
+  'हॅलो',
+  'ஹல ோ',
 ];

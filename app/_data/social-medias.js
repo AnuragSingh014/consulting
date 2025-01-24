@@ -1,18 +1,18 @@
 export const socialMedias = [
   {
-    href: 'https://www.awwwards.com/dennissnellenberg/',
-    title: 'Awwwards',
+    href: 'https://www.linkedin.com/company/influidity-solution/',
+    title: 'LinkedIn',
   },
   {
-    href: 'https://www.instagram.com/codebydennis/',
+    href: 'https://www.instagram.com/influidity_solution/',
     title: 'Instagram',
   },
   {
-    href: 'https://dribbble.com/dennissnellenberg',
-    title: 'Dribbble',
+    href: 'https://www.facebook.com/influiditysolution/',
+    title: 'Facebook',
   },
   {
-    href: 'https://www.linkedin.com/in/dennissnellenberg/',
-    title: 'LinkedIn',
-  },
+    href: 'https://x.com/Influidity',
+    title: 'X',
+  }
 ];

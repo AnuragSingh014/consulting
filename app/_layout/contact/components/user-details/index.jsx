@@ -23,7 +23,7 @@ export function UserDetails({ transformX }) {
               src='/screenshot.png'
               className='rounded-full object-cover'
               fill={true}
-              alt='Dennis Snellenberg Profile Picture'
+              alt=''
             />
           </ImageWrapper>
           <MainTitle>Let’s work</MainTitle>
@@ -54,24 +54,24 @@ export function UserDetails({ transformX }) {
       <Row>
         <div className='flex w-full flex-col gap-4 lg:flex-row'>
           <div>
-            <a href='mailto:info@dennissnellenberg.com'>
+            <a href=''>
               <MagneticButton
                 variant='outline'
-                size='md'
-                className='w-full border-muted-foreground'
+                size='default'
+                className='w-full border-muted-foreground p-4'
               >
-                info@dennissnellenberg.com
+               connect@influidity
               </MagneticButton>
             </a>
           </div>
           <div>
-            <a href='tel:+31627847430'>
+            <a href=''>
               <MagneticButton
                 variant='outline'
-                size='md'
-                className='w-full border-muted-foreground'
+                size='default'
+                className='w-full border-muted-foreground p-4'
               >
-                +31 6 27 84 74 30
+                +919999999999
               </MagneticButton>
             </a>
           </div>

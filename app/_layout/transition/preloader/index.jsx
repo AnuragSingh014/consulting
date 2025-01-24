@@ -21,7 +21,7 @@ export function Preloader() {
     callback: () => {
       setIndex(prevIndex => prevIndex + 1);
     },
-    duration: index === 0 ? 500 : 250,
+    duration: index === 0 ? 200 : 150,
     deps: [index],
   });
 
@@ -36,17 +36,17 @@ export function Preloader() {
   const curve = {
     initial: {
       d: initialPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1] },
+      transition: { duration: 0.2, ease: [0.50, 0, 0.24, 1] },
     },
     exit: {
       d: targetPath,
-      transition: { duration: 0.7, ease: [0.76, 0, 0.24, 1], delay: 0.3 },
+      transition: { duration: 0.2, ease: [0.50, 0, 0.24, 1], delay: 0.2 },
     },
   };
 
   return (
     <MotionComponent
-      className='fixed z-50 h-screen w-screen cursor-wait bg-foreground'
+      className='fixed z-50 h-screen w-screen cursor-wait bg-gray-900'
       variants={slideUp}
       initial='initial'
       exit='exit'
@@ -54,17 +54,17 @@ export function Preloader() {
       {width > 0 ? (
         <>
           <MotionComponent
-            className='text-4xl font-extrabold text-white md:text-4xl'
+            className='text-4xl font-extrabold  text-white md:text-3xl tracking-tighter'
             variants={fade}
             initial='initial'
             animate='enter'
           >
-            <Dot size={48} className='me-3' />
+
             <p className='text-6xl'>{preloaderWords[index]}</p>
           </MotionComponent>
           <motion.svg className='absolute top-0 -z-10 h-[calc(100%+300px)] w-full'>
             <motion.path
-              className='fill-foreground'
+              className=''
               variants={curve}
               initial='initial'
               exit='exit'

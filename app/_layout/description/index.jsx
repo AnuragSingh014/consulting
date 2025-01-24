@@ -8,24 +8,23 @@ import { MagneticButton, ParallaxFade, ParallaxReveal } from '@/components';
 
 import { Title, Wrapper } from './index.styled';
 
-const phrase =
-  'Helping brands to stand out in the digital era. Together we will set the new status quo. No nonsense, always on the cutting edge.';
-
+const phrase1 = 'Business challenges demand real solutions, not fluff.'
+const phrase2 = 'We are the partner who rolls up their sleeves with you — not the one who hands over a  deck and leaves'
 export function Description() {
   return (
     <article className='container relative'>
       <Wrapper>
         <div className='basis-full lg:basis-9/12'>
-          <Title>
-            <ParallaxReveal paragraph={phrase} />
+          <Title className=''>
+            <ParallaxReveal paragraph={phrase1} />
           </Title>
-        </div>
-
-        <div className='basis-7/12 lg:basis-3/12'>
+          <Title className=''>
+            <ParallaxReveal paragraph={phrase2} />
+          </Title>
           <ParallaxFade>
-            <Balancer as='p' className='mt-2 text-base lg:text-lg'>
-              The combination of my passion for design, code & interaction
-              positions me in a unique place in the web design world.
+            <Balancer as='p' className='mt-5 text-base lg:text-lg'>
+            In today's world, speed and clarity win. We focus on actionable solutions that drive 
+results 
             </Balancer>
           </ParallaxFade>
         </div>
@@ -40,7 +39,9 @@ export function Description() {
           <div className='absolute right-0 top-3/4 lg:top-full lg:me-10'>
             <Link href='/about' passHref>
               <MagneticButton variant='ghost' size='xl'>
-                About me
+                <p className='text-2xl'>
+                  About us
+                </p>
               </MagneticButton>
             </Link>
           </div>

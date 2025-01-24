@@ -1,15 +1,9 @@
 {
   "name": "abc",
-  "title": " • Freelance Designer & Developer",
-  "description": "Helping brands thrive in the digital world. Located in The Netherlands. Delivering tailor-made digital designs and building interactive websites from scratch. © Code by Dennis",
-  "author": {
-    
-  },
-  "keywords": [
-    "Design",
-    "Develope",
-    "Freelance"
-  ],
+  "title": " • ",
+  "description": "",
+  "author": {},
+  "keywords": [],
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -50,7 +44,6 @@
     "eslint-import-resolver-alias": "^1.1.2",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-tailwindcss": "^3.13.0",
-    "husky": "^8.0.0",
     "lint-staged": "^15.2.0",
     "postcss": "^8",
     "postcss-import": "^15.1.0",
